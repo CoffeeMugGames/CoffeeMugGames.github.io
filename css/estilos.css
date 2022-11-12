@@ -36,13 +36,19 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 80px;
-  height: 80px;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  width: 64px;
+  height: 64px;
+  opacity: 75%;
+}
+.chad:hover{
+  opacity: 100%;
+  filter: drop-shadow(0 0 10px #fff);
+  transition: .1s;
+  -webkit-filter: drop-shadow(0 0 10px #fff);
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
 }
 
 /* !BARRA DE NAVEGACIÓN */
