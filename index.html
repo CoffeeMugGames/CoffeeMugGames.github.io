@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="img/cmg/favicon.ico">
-        	<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<title>Testing</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="img/cmg/favicon.ico" type="image/x-icon">
+		<script src="js/index.js"></script>
+        <title>CoffeeMugSoftware</title>
+    </head>
+    <header>
+        <nav class="main_navbar" id="inicio">
+            <img src="img/cmg/logo_big.png" alt="Florida Decay" class="logo">
+            <ul>
+                <li><a href="#soporte" class="links">Soporte</a></li>
+                <li><a href="#opcion2" class="links">opcion2</a></li>
+                <li><a href="#opcion3" class="links">opcion3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="first_container">
+                <div class="presentation">
+                    <div class="text">
+                        <h2>TAKE A MUG, AVOID BUGS</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui tenetur libero, magnam explicabo reiciendis placeat velit, repellat quae ab numquam accusamus? Et in asperiores architecto ex quod exercitationem numquam!</P>
+                    </div>
+                    <div class="presentation_logo">
+                        <img src="img/cmg/logo_big.png" alt="" class="coffee_logo">
+                    </div>
+                </div>
+            </div>
 
-		<!-- Font Import -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-		<!-- Redirect to home page -->
-        	<!--<meta http-equiv="Refresh" content="0;page/home_page.html">-->
-	</head>
+            <div class="second_container" id="opcion2">
+                <div class="second_presentation">
+                    
+                </div>
+            </div>
 
-	<body class="main-background">
-		<center>
-			<img src="img/cmg/logo_big.png" alt="CoffeeMugGames" class="main-logo__cmg">
 
-			<h1 class="main-body__title">
-                <p>Redirecting to home page...</p>
-            </h1>
-		</center>
-	</body>
+            <div class="three_container" id="opcion3">
+                <div class="three_container__download">
+                    
+                </div> 
+            </div>
+
+
+            <div class="four_container" id="soporte">
+                <div class="four_container__support">
+                    <form action="" class="four_container__support__form">
+                        <h3>SOPORTE</h3>
+                        <div class="inputs">    
+                            <label for="gmail">Gmail</label>
+                            <input class="inp" type="gmail" name="gmail" id="gmail" required>
+                        </div>
+                        <div class="inputs">   
+                            <label for="message">Mensaje</label>
+                            <textarea class="inp" name="message" id="message" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button class="btn">Enviar</button>
+                    </form>
+                </div>    
+            </div>
+        </main>
+        <a href="#inicio" id="chad"><img src="data:image/png;base64,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" class="chad" alt="chad"></a>
+    </body>
+    <footer>
+
+    </footer>
 </html>
