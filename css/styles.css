@@ -139,6 +139,11 @@
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .container-title {
@@ -158,4 +163,26 @@
     font-family: "Kanit", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+
+.footer-container {
+    background-color: var(--color-text-alt);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.footer-logo {
+    margin: 16px;
+    width: 512px;
+    height: auto;
 }
