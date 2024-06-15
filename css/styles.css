@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap');
 
 * {
     scroll-behavior: smooth;
@@ -15,20 +15,22 @@
     --color-background: #FFF;
 }
 
-@media screen and (max-width: 780px) {
+/* Media query*/
+@media screen and (max-width: 1000px) {
     /* Show hamburguer */
     .nav-main {
         display: none;
     }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1000px) {
     /* Hide hamburguer */
     .nav-main {
         display: flex;
     }
 }
 
+/* Nav */
 .nav-main {
     position: fixed;
     left: 0;
@@ -60,14 +62,14 @@
 }
 
 .nav-button {
-    font-size: 12px;
+    font-size: 18px;
     font-family: "Kanit", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-text-unselected);
-    margin: 10px;
+    margin: 16px;
     padding: 4px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -78,14 +80,14 @@
 
 .nav-button:hover {
     color: var(--color-text);
-    text-shadow: 0px 0px 15px var(--color-text);
+    text-shadow: 0px 0px 30px var(--color-text);
 }
 
 .nav-button-alt {
     display: flex;
     align-content: center;
     background-color: var(--color-primary);
-    font-size: 12px;
+    font-size: 18px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -93,6 +95,7 @@
     text-decoration: none;
     color: var(--color-text);
     margin: 8px;
+    margin-right: 10px;
     padding: 5px;
     border-style: solid;
     border-radius: 4px;
@@ -104,23 +107,55 @@
 }
 
 .nav-button-alt img {
-    width: 16px;
+    width: 24px;
     height: auto;
     align-self: center;
     margin: 0px;
-    margin-right: 3px;
+    margin-right: 6px;
     padding: 0px;
 }
 
 .nav-main-img {
-    width: 180px;
+    width: 256px;
     height: auto;
-    margin: 4px;
-    margin-right: 10px;
-    margin-left: 8px;
+    margin: 8px;
+    margin-right: 20px;
+    margin-left: 16px;
 }
 
+/* Body */
 .body-main {
-    margin-top: 80px;
+    margin-top: 50dvh;
     background-color: var(--color-background);
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+}
+
+.container {
+    background-color: var(--color-text-unselected);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.container-title {
+    margin: 16px;
+    padding: 0px;
+    font-size: 32px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.container-content {
+    margin: 16px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
