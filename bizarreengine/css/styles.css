@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
+}
+
+:root {
+    --color-primary: #0c0c0c;
+    --color-secondary: #FFF;
+    --color-text: #FFF;
+    --color-text-unselected: #d6d6d6;
+    --color-text-alt: #000;
+    --color-hover: #1b1b1b;
+    --color-background: #FFF;
+}
+
+@media screen and (max-width: 780px) {
+    /* Show hamburguer */
+    .nav-main {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    /* Hide hamburguer */
+    .nav-main {
+        display: flex;
+    }
+}
+
+.nav-main {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-primary);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.nav-main ul {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-button {
+    font-size: 12px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text-unselected);
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.nav-button:hover {
+    color: var(--color-text);
+    text-shadow: 0px 0px 15px var(--color-text);
+}
+
+.nav-button-alt {
+    display: flex;
+    align-content: center;
+    background-color: var(--color-primary);
+    font-size: 12px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text);
+    margin: 8px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.nav-button-alt img {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    margin: 0px;
+    margin-right: 3px;
+    padding: 0px;
+}
+
+.nav-main-img {
+    width: 180px;
+    height: auto;
+    margin: 4px;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+
+.body-main {
+    margin-top: 80px;
+    background-color: var(--color-background);
+}
