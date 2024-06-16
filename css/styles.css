@@ -297,14 +297,11 @@
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    /*
-    color: var(--color-text);
-    text-shadow: 2px 2px 5px var(--color-text-alt);
-    */
+    text-shadow: 0px 0px 20px var(--color-text-unselected);
 }
 
 .container-content {
-    color: var(--color-text-alt);
+    color: var(--color-text-unselected);
     margin: 0px;
     padding: 16px;
     font-size: 20px;
