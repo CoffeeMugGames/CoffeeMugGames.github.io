@@ -193,7 +193,7 @@
     width: 256px;
     height: 150px;
     margin: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: var(--color-secondary);
@@ -211,7 +211,7 @@
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-style: normal;
-    margin: 12px 10px 0px 10px;
+    margin: 20px 10px 0px 10px;
     width: 300px;
 }
 
@@ -397,7 +397,8 @@
     flex-direction: column;
     align-items: normal;
     justify-content: center;
-    margin: 0px 10px 30px;
+    margin: 0px 10px 60px;
+    padding-bottom: 20px;
     background-color: var(--color-primary);
     border-radius: 10px;
     -webkit-border-radius: 10px;
