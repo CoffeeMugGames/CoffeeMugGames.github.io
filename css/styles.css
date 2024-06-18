@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap');
 
 * {
     scroll-behavior: smooth;
     scroll-margin-top: 80px;
-}
-
-/* scrollbar */
-* {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -27,6 +23,7 @@
     --color-background-container-alt: #a8a8a8;
 }
 
+
 /* Media query*/
 @media screen and (max-width: 1080px) {
     /* Show hamburguer */
@@ -41,6 +38,7 @@
         display: flex;
     }
 }
+
 
 /* Nav */
 .nav-main {
@@ -111,7 +109,7 @@
     text-decoration: none;
     margin: 8px;
     margin-right: 10px;
-    padding: 5px 16px;
+    padding: 5px 10px;
     border-style: solid;
     border-radius: 4px;
     border-width: 1px;
@@ -148,6 +146,7 @@
     margin-left: 16px;
 }
 
+
 /* Body */
 .body-main {
     margin-top: 50dvh;
@@ -157,7 +156,9 @@
     font-weight: 200;
 }
 
-.news-row-container {
+
+/* blog */
+.blog-row-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -166,11 +167,7 @@
     align-items: center;
 }
 
-.news-container {
-    /*
-    width: 320px;
-    height: auto;
-    */
+.blog-container {
     background-color: var(--color-contrast);
     display: flex;
     flex-direction: row;
@@ -184,19 +181,19 @@
     -o-border-radius: 12px;
 }
 
-.news-container-sub {
+.blog-container-sub {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.news-container-img {
+.blog-container-img {
     background-color: var(--color-primary);
     width: 256px;
     height: 150px;
     margin: 10px;
-    /*margin-top: 30px;*/
+    margin-top: 30px;
     border-width: 1px;
     border-style: solid;
     border-color: var(--color-secondary);
@@ -207,7 +204,7 @@
     -o-border-radius: 10px;
 }
 
-.news-container-date {
+.blog-container-date {
     color: var(--color-text-unselected);
     display: block;
     font-size: 15px;
@@ -218,7 +215,7 @@
     width: 300px;
 }
 
-.news-container-title {
+.blog-container-title {
     color: var(--color-text);
     display: block;
     font-size: 24px;
@@ -229,7 +226,7 @@
     width: 300px;
 }
 
-.news-container-content {
+.blog-container-content {
     color: var(--color-text);
     display: block;
     font-size: 18px;
@@ -240,12 +237,12 @@
     width: 300px;
 }
 
-.news-container-button {
+.blog-container-button {
     display: flex;
     justify-content: end;
 }
 
-.news-button {
+.blog-button {
     display: flex;
     align-content: center;
     color: var(--color-text);
@@ -268,12 +265,12 @@
     -o-border-radius: 4px;
 }
 
-.news-button:hover {
+.blog-button:hover {
     color: var(--color-text-alt);
     background-color: var(--color-secondary);
 }
 
-.news-button img {
+.blog-button img {
     width: 24px;
     height: auto;
     align-self: center;
@@ -282,15 +279,123 @@
     padding: 0px;
 }
 
-.news-button:hover img {
+.blog-button:hover img {
     filter: invert(100%);
     -webkit-filter: invert(100%);
 }
 
+
+/* install */
+.install-row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.install-container {
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-contrast);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.install-container-img {
+    background-color: var(--color-primary);
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.install-container-title {
+    color: var(--color-text);
+    display: block;
+    font-size: 24px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 10px;
+    width: 300px;
+}
+
+.install-container-content {
+    color: var(--color-text);
+    display: block;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin: 0px 10px;
+    width: 300px;
+}
+
+.install-button {
+    display: flex;
+    align-content: center;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: center;
+    margin: 16px;
+    margin-top: 30px;
+    padding: 8px 16px;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.install-button:hover {
+    color: var(--color-text-alt);
+    background-color: var(--color-secondary);
+}
+
+.install-button img {
+    width: 24px;
+    height: auto;
+    align-self: center;
+    margin: 0px;
+    margin-right: 6px;
+    padding: 0px;
+}
+
+.install-button:hover img {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+
+/* normal containers*/
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: normal;
     justify-content: center;
     margin: 0px 10px 30px;
     background-color: var(--color-primary);
@@ -313,10 +418,10 @@
     padding: 0px;
     font-size: 40px;
     font-family: "Kanit", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px var(--color-text-unselected);
+    /*text-shadow: 0px 0px 20px var(--color-text-unselected);*/
     align-self: flex-start;
 }
 
@@ -331,12 +436,16 @@
     align-self: flex-start;
 }
 
+
+/* footer*/
 .footer-container {
     user-select: none;
     background-color: var(--color-primary);
     color: var(--color-text);
     margin: 0;
     padding: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
