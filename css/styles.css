@@ -391,7 +391,7 @@
 }
 
 
-/* normal containers*/
+/* normal containers */
 .container {
     display: flex;
     flex-direction: column;
@@ -438,7 +438,7 @@
 }
 
 
-/* footer*/
+/* footer */
 .footer-container {
     user-select: none;
     background-color: var(--color-primary);
