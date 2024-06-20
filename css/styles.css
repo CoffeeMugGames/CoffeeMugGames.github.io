@@ -285,8 +285,8 @@
 }
 
 
-/* install */
-.install-row-container {
+/* item */
+.item-row-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -295,9 +295,9 @@
     align-items: center;
 }
 
-.install-container {
+.item-container {
     width: 320px;
-    height: 320px;
+    height: 340px;
     background-color: var(--color-contrast);
     display: flex;
     flex-direction: column;
@@ -312,7 +312,7 @@
     -o-border-radius: 12px;
 }
 
-.install-container-img {
+.item-container-img {
     background-color: var(--color-primary);
     width: 128px;
     height: 128px;
@@ -324,18 +324,17 @@
     -o-border-radius: 50%;
 }
 
-.install-container-title {
+.item-container-title {
     color: var(--color-text);
     display: block;
     font-size: 24px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 0px 10px;
-    width: 300px;
+    margin: 10px;
 }
 
-.install-container-content {
+.item-container-content {
     color: var(--color-text);
     display: block;
     font-size: 18px;
@@ -345,9 +344,10 @@
     text-align: center;
     margin: 0px 10px;
     width: 300px;
+    height: 64px;
 }
 
-.install-button {
+.item-button {
     display: flex;
     align-content: center;
     color: var(--color-text);
@@ -360,7 +360,7 @@
     text-decoration: none;
     justify-content: center;
     margin: 16px;
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 8px 16px;
     border-style: solid;
     border-radius: 4px;
@@ -371,12 +371,12 @@
     -o-border-radius: 4px;
 }
 
-.install-button:hover {
+.item-button:hover {
     color: var(--color-text-alt);
     background-color: var(--color-secondary);
 }
 
-.install-button img {
+.item-button img {
     width: 24px;
     height: auto;
     align-self: center;
@@ -385,7 +385,7 @@
     padding: 0px;
 }
 
-.install-button:hover img {
+.item-button:hover img {
     filter: invert(100%);
     -webkit-filter: invert(100%);
 }
