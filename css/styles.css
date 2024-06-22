@@ -27,22 +27,54 @@
 /* Media query*/
 @media screen and (max-width: 1080px) {
     /* Show hamburguer */
-    .nav-main {
+    .nav-large-screen {
         display: none;
+    }
+
+    .nav-hamburguer {
+        display: flex;
     }
 }
 
 @media screen and (min-width: 1080px) {
     /* Hide hamburguer */
-    .nav-main {
+    .nav-large-screen {
         display: flex;
+    }
+
+    .nav-hamburguer {
+        display: none;
+    }
+}
+
+
+/* Keyframes */
+@keyframes nav-button-side {
+    from {
+        opacity: 0;
+        margin: 0;
+    }
+    to {
+        opacity: 1;
+        margin: 0px 16px;
+    }
+}
+
+@keyframes nav-startup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
 
 /* Nav */
 .nav-main {
+    display: flex;
     position: fixed;
+    height: 60px;
     left: 0;
     right: 0;
     top: 0;
@@ -82,13 +114,19 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-text-unselected);
-    margin: 16px;
     padding: 4px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    animation: nav-button-side 0.5s forwards;
+    -webkit-animation: nav-button-side 0.5s forwards;
 }
 
 .nav-button:hover {
@@ -97,7 +135,6 @@
 }
 
 .nav-button-alt {
-    display: flex;
     align-content: center;
     color: var(--color-text);
     background-color: var(--color-primary);
@@ -117,6 +154,8 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    animation: nav-startup 0.5s forwards;
+    -webkit-animation: nav-startup 0.5s forwards;
 }
 
 .nav-button-alt:hover {
@@ -129,7 +168,6 @@
     height: auto;
     align-self: center;
     margin: 0px;
-    margin-right: 6px;
     padding: 0px;
 }
 
@@ -144,12 +182,14 @@
     margin: 8px;
     margin-right: 20px;
     margin-left: 16px;
+    animation: nav-startup 0.5s forwards;
+    -webkit-animation: nav-startup 0.5s forwards;
 }
 
 
 /* Body */
 .body-main {
-    margin-top: 50dvh;
+    margin-top: 60px;
     background-color: var(--color-background);
     font-size: 18px;
     font-family: "Kanit", sans-serif;
@@ -405,6 +445,10 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.container-first {
+    margin-top: 50dvh;
 }
 
 .container-img {

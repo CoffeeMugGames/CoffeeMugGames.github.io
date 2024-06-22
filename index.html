@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="assets/logo/page/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/cmg.css">
         <title>Bizarre Engine 2</title>
     </head>
 
@@ -12,24 +13,34 @@
         <nav class="nav-main">
             <ul>
                 <img src="assets/logo/org/bizarre_engine_2_linear.svg" class="nav-main-img" onclick="">
-                <li><a href="#overview" class="nav-button">overview</a></li>
-                <li><a href="#blog" class="nav-button">blog</a></li>
-                <!-- <li><a href="#games" class="nav-button">games</a></li> -->
-                <li><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2/" class="nav-button" target="_blank">documentation</a></li>
-                <li><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2" class="nav-button" target="_blank">source code</a></li>
+                <!--
+                <li><a href="#games" class="nav-button">games</a></li>
+                <li class="nav-large-screen"><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2/" class="nav-button" target="_blank">Coffee Mug Games</a></li>
+                <li class="nav-large-screen"><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2/" class="nav-button" target="_blank">asas</a></li>
+                -->
+                <li class="nav-large-screen"><a href="#overview" class="nav-button">overview</a></li>
+                <li class="nav-large-screen"><a href="#blog" class="nav-button">blog</a></li>
+                <li class="nav-large-screen"><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2/" class="nav-button" target="_blank">documentation</a></li>
+                <li class="nav-large-screen"><a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2" class="nav-button" target="_blank">source code</a></li>
             </ul>
             
-            <!-- <a href="https://github.com/Coffee-Mug-Games/Bizarre-Engine-2/releases/latest" class="nav-button-alt" target="_blank"><img src="assets/logo/page/download_nav.svg" class="nav-button-alt-img">download</a> -->
-            <a href="#install" class="nav-button-alt"><img src="assets/logo/install/download.svg" class="nav-button-alt-img">get started</a>
+            <a href="#install" class="nav-button-alt nav-large-screen"><img src="assets/logo/install/download.svg" class="nav-button-alt-img">get started</a>
+            
+            <!-- Hamburguer -->
+            <a href="#nav-hamburguer" class="nav-button-alt nav-hamburguer"><img src="assets/logo/page/hamburguer.svg" class="nav-button-alt-img"></a>
         </nav>
 
-        <div id="overview" class="container">
+        <div id="navHamburguerCollapsable" style="visibility: hidden;">
+            <p style="color: aliceblue;">sas</p>
+        </div>
+
+        <div id="overview" class="container container-first">
             <p class="container-title">overview</p>
             <p class="container-subtitle">Features</p><div class="item-row-container">
                 
                 <div class="item-container">
-                    <p class="item-container-title">Customatizable Code</p>
-                    <img src="assets/logo/features/custom_code.svg" class="item-container-img">
+                    <p class="item-container-title">Source Code</p>
+                    <img src="assets/logo/features/source_code.svg" class="item-container-img">
                     <p class="item-container-content">Access to Bizarre Engine 2 source code and customize everything</p>
                 </div>
 
@@ -42,7 +53,7 @@
                 <div class="item-container">
                     <p class="item-container-title">JSON Write & Read</p>
                     <img src="assets/logo/features/json.svg" class="item-container-img">
-                    <p class="item-container-content">Write and read JSON files with one script</p>
+                    <p class="item-container-content">Write and read JSON files with one script call</p>
                 </div>
             
             <!--
@@ -68,7 +79,7 @@
                 <div class="item-container">
                     <p class="item-container-title">External Importing</p>
                     <img src="assets/logo/features/import.svg" class="item-container-img">
-                    <p class="item-container-content">External audio & sprites importing from file using one script</p>
+                    <p class="item-container-content">External audio & sprites importing from file using one script call</p>
                 </div>
 
                 <div class="item-container">
@@ -78,9 +89,9 @@
                 </div>
 
                 <div class="item-container">
-                    <p class="item-container-title">INI Massive Write & Read</p>
+                    <p class="item-container-title">Massive INI Write & Read</p>
                     <img src="assets/logo/features/ini_massive.svg" class="item-container-img">
-                    <p class="item-container-content">Write or read ini files with thousands of values using one script</p>
+                    <p class="item-container-content">Write or read ini files with thousands of values using one script call</p>
                 </div>
 
                 <div class="item-container">
@@ -191,7 +202,7 @@
         </div>
 
         <footer class="footer-container">
-            <img src="assets/logo/org/coffee_mug_games.svg" class="footer-logo">
+            <img src="assets/logo/org/coffee_mug_games.svg" class="footer-logo logo-cmg">
             <p class="footer-container-content">Coffee Mug Games</p>
         </footer>
     </body>

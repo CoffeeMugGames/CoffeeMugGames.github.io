@@ -1,0 +1,66 @@
+@keyframes shake-logo {
+    0% {
+        scale: 1;
+        transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+    }
+    15% {
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+    30% {
+        scale: 1.2;
+        transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+    }
+    45% {
+        transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+    }
+    60% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    75% {
+        scale: 1;
+        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+        -moz-transform: rotate(-1deg);
+        -ms-transform: rotate(-1deg);
+        -o-transform: rotate(-1deg);
+    }
+    90% {
+        transform: rotate(1deg);
+        -webkit-transform: rotate(1deg);
+        -moz-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+        -o-transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+.logo-cmg:hover {
+    animation: shake-logo 0.5s linear;
+    -webkit-animation: shake-logo 0.5s linear;
+}
