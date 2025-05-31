@@ -23,31 +23,5 @@
         "image link 1"
       ]
     }
- ],
- "floridadecay": [
-    {
-      "date": ["Localization 1 date", "Localization 2 date", "Localization 3 date"],
-      "title": ["Localization 1 title", "Localization 2 title", "Localization 3 title"],
-      "description": ["Localization 1 desc", "Localization 2 desc", "Localization 3 desc"],
-      "link": "",
-      "image": [
-        "image link 1",
-        "image link 1",
-        "image link 1"
-      ]
-    }
- ],
- "chronophobia": [
-    {
-      "date": ["Localization 1 date", "Localization 2 date", "Localization 3 date"],
-      "title": ["Localization 1 title", "Localization 2 title", "Localization 3 title"],
-      "description": ["Localization 1 desc", "Localization 2 desc", "Localization 3 desc"],
-      "link": "",
-      "image": [
-        "image link 1",
-        "image link 1",
-        "image link 1"
-      ]
-    }
  ]
 }
