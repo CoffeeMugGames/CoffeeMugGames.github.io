@@ -5,31 +5,9 @@
   "inmemoriam": {
     "serveractive": true,
     "version": 20250401,
-    "userversion": "1.1.1",
+    "userversion": "1.2",
     "link": [
-      ["ITCH.IO", "https://brunoo1545.itch.io/in-memoriam/devlog/916474/in-memoriam-v111"]
-    ],
-    "metadata": {}
-  },
-  "floridadecay": {
-    "serveractive": false,
-    "version": 0,
-    "userversion": "1.0",
-    "link": [
-      ["link a", "google.com"],
-      ["link b", "google.com"],
-      ["link c", "google.com"]
-    ],
-    "metadata": {}
-  },
-  "chronophobia": {
-    "serveractive": false,
-    "version": 0,
-    "userversion": "1.0",
-    "link": [
-      ["link a", "google.com"],
-      ["link b", "google.com"],
-      ["link c", "google.com"]
+      ["ITCH.IO", "https://brunoo1545.itch.io/in-memoriam/"]
     ],
     "metadata": {}
   }
